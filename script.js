@@ -44,7 +44,7 @@ const todaysWeatherFeature = (city) => {
       //Get today's weather
       let { icon } = json.weather[0];
       cityName.innerText = `${json.name}`;
-      tempToday.innerText = `${json.main.temp.toFixed(0)}`;
+      tempToday.innerText = `${json.main.temp.toFixed(1)}`;
       tempTextCelsius.innerText = `°C`;
       weatherDescription.innerText = `${json.weather[0].description}`;
       mainIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="weather icon" class="main-icon">`;
